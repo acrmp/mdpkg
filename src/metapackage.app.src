@@ -1,0 +1,17 @@
+{application, metapackage,
+[
+    {description, "normalises package repository metadata"},
+    {vsn, "0.1.0"},
+    {modules, [
+      md_pkg_debian,
+      md_pkg_redhat,
+      md_publisher_s3,
+      metapackage
+    ]},
+    {registered, []},
+    {applications, [
+        kernel,
+        stdlib
+    ]},
+    {env, []}
+]}.
